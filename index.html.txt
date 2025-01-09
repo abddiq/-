@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بوابة الدفع - PayHortek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="iraq-flag"></div>
+        <h1>ادفع الآن</h1>
+        <form id="payment-form">
+            <label for="card-number">رقم البطاقة:</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+
+            <label for="expiry-date">تاريخ الانتهاء:</label>
+            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" placeholder="123" required>
+
+            <label for="card-name">اسم حامل البطاقة:</label>
+            <input type="text" id="card-name" placeholder="كما هو مدون على البطاقة" required>
+
+            <button type="submit">ادفع الآن</button>
+        </form>
+        <div class="payment-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Mada_Logo.svg" alt="مدى">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/FIB_Logo.svg" alt="FIB">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Stc_logo.svg" alt="الطيف">
+        </div>
+        <div class="footer">
+            برمجة: مودرن ميديا
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>ابل

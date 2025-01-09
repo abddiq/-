@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #CE1126 25%, #FFFFFF 25%, #FFFFFF 50%, #000000 50%, #000000 75%, #007A3D 75%);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.payment-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+    text-align: right;
+    animation: fadeInLabel 1s ease-in-out;
+}
+
+@keyframes fadeInLabel {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    animation: slideInInput 1s ease-in-out;
+}
+
+@keyframes slideInInput {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: fadeInButton 1s ease-in-out;
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.payment-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: fadeInIcons 1s ease-in-out;
+}
+
+@keyframes fadeInIcons {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.payment-icons img {
+    height: 30px;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.iraq-flag {
+    width: 80px;
+    height: 50px;
+    background: linear-gradient(135deg, #CE1126 33%, #FFFFFF 33%, #FFFFFF 66%, #000000 66%, #000000 100%);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #007A3D; /* لون أخضر */
+    font-weight: bold;
+    margin: 0 auto 20px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateFlag 5s infinite linear;
+}
+
+.iraq-flag::before {
+    content: "الله أكبر";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotateFlag {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
